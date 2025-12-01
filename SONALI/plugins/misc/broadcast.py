@@ -117,7 +117,7 @@ async def braodcast_message(client, message, _):
     if "-assistant" in message.text:
         aw = await message.reply_text(_["broad_5"])
         text = _["broad_6"]
-        from CWMUSIC.core.userbot import assistants
+        from SONALI.core.userbot import assistants
 
         for num in assistants:
             sent = 0
@@ -167,3 +167,4 @@ async def auto_clean():
 
 
 asyncio.create_task(auto_clean())
+
